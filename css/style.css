@@ -473,6 +473,7 @@ img.mob {
 
 .footer {
   background-color: #191919;
+  padding-bottom: 80px;
 }
 
 .about-logo {
@@ -483,7 +484,7 @@ img.mob {
 .about-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   color: #555555;
   line-height: 25px;
 }
@@ -494,5 +495,117 @@ img.mob {
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.resent-posts, 
+.twitter,
+.widget {
+  margin-top: 90px;
+}
+
+.posts-title,
+.twitter-title,
+.widget-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.posts-calendar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color: #363636;
+  margin-bottom: 5px;
+}
+
+.posts-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #555555;
+}
+
+.posts-line {
+  border-color: #252525;
+}
+
+.posts-calendar_color {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+.posts-text_color {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #c7b299;
+}
+
+.twit-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+.twit-time {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color: #363636;
+}
+
+.twit-link {
+  color: #959595;
+}
+
+.copy {
+  max-width: 100%;
+  background-color: #111111;
+}
+
+.footer-nav {
+  padding-top: 46px;
+  padding-bottom: 55px;
+}
+
+.footer-nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.footer-nav > ul > li {
+  float: left;
+  padding: 0px 2px;
+
+}
+
+.footer-nav > ul > li > a {
+  color: #555555;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+li > a > span.white {
+  color: #FFF;
+}
+
+li > a > span.orange {
+  color: #c7b299;
+}
+
+.text-right {
+  float: right;
 }
