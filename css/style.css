@@ -6,58 +6,121 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-	border: none;
-}
-
 .navigation {
-	position: absolute;
-	z-index: 2;
-	left: 0;
-	right: 0;
-	
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
 }
 
-.navbar-default { 
-	background: none;
-	box-shadow: none;
-	
+.nav-brand {
+  display: inline-block;
+  margin-top: 40px;
 }
 
-.navbar-brand {
-  padding: 0px;
-}
-.navbar-brand > img {
-  height: 100%; 
-  padding: 15px;
-  width: 64px;
-}
-
-.navigation .navbar-brand {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-}
-.navigation .navbar-brand>img {
-  padding: 7px 14px;
-  width: 182px;
+.brand-title {
+  color: #FFF;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
 }
 
-ul.nav {
-	padding-top: 50px;
+.menu {
+
 }
 
-.navbar-default ul.nav > li > a {
-	text-transform: capitalize;
-	color: #FFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+#nav-menu {
+    display: inline-block;
+    margin-top: 70px;
 }
 
-.navbar-default ul.nav > li > a:hover {
- 	 color: #c7b299;
+#nav-menu > a {
+    display: none;
+
+}
+#nav-menu li {
+    position: relative;
+    display: block;
+}
+ 
+#nav-menu > ul > li {
+    float: left;
+    padding-right: 20px;
 }
 
+#nav-menu > ul > li > a {
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#nav-menu > ul > li > a:hover {
+   color: #c7b299;
+}
+
+.btns {
+  list-style-type: none;
+  margin-top: 65px;
+}
+
+.btns > li {
+  float: left;
+  padding-right: 20px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btns > li:hover {
+  color: lightblue;
+}
+
+@media only screen and ( max-width: 767px ) /* 640 */ {
+  
+   /*  .nav-brand {
+      margin-top: 40px;
+      margin-left: 160px;
+    }
+ */
+    #nav-menu {
+      position: relative;
+      display: block;
+      /* margin-left: 25px;
+      margin-top: -50px; */
+    }
+            
+    #nav-menu:not( :target ) > a:first-of-type,
+    #nav-menu:target > a:last-of-type {
+        display: block;
+    }
+     
+    #nav-menu > ul {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    #nav-menu:target > ul {
+        display: block;
+    }
+    #nav-menu > ul > li {
+        width: 100%;
+        float: none;
+    }
+     
+    #nav-menu li ul {
+        position: static;
+    }
+
+    /* .btns > li {
+      padding-left: 280px;
+      margin-top: -95px;
+    } */
+}
 
 .carousel-caption {
     top: 30%;
