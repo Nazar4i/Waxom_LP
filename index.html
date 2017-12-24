@@ -1,579 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Waxom</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Waxom</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/eb1b040a82.js"></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-	<nav class="navigation">
-	    <div class="container">
-	        <div class="row">
-	        	<div class="col-md-3 col-xs-3">
-		            <div class="nav-brand">
-		                <a class="logo" href="#"><img src="img/logo.png" alt=""></a>
-		                <h2 class="brand-title hidden-xs">Waxom</h2>
-		            </div>
-				</div>
-				<div class="col-md-7 col-xs-7">
-		            <div id="nav-menu" class="menu">
-		            <a href="#nav-menu" title="Show navigation"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
-		            <a href="#" title="Hide navigation"><i class="fa fa-times fa-3x" aria-hidden="true"></i></a>
-		                <ul>
-		                    <li><a href="#">home</a></li>
-		                    <li><a href="#">about us</a></li>
-		                    <li><a href="#">portfolio</a></li>
-		                    <li><a href="#">features</a>
-		                    <li><a href="#">blog</a></li>
-		                    <li><a href="#">pricing</a></li>
-		                    <li><a href="#">shortcodes</a></li>
-		                    <li><a href="#">contact</a></li>
-		                </ul>
-		            </div>
-		        </div>
-		        <div class="col-md-2 col-xs-2">
-		        	<ul class="btns">
-		        		<li class="suit hidden-xs"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i></li>
-		        		<li class="search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></li>
-		        	</ul>
-		        </div>
-	        </div>
-	    </div>
-	</nav>	
-	
+    <!-- <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#" class="logo_link">
+                    <img src="./assets/Waxom.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav__taggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#">Home</a></li>
+                <li class="nav__list-item"><a href="#">About Us</a></li>
+                <li class="nav__list-item"><a href="#">Portfolio</a></li>
+                <li class="nav__list-item"><a href="#">Features</a></li>
+                <li class="nav__list-item"><a href="#">Blog</a></li>
+                <li class="nav__list-item"><a href="#">Pricing</a></li>
+                <li class="nav__list-item"><a href="#">Shortcodes</a></li>
+                <li class="nav__list-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav> -->
 
-	<div class="container-fluid">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		    <!-- Indicators -->
-		    <ol class="carousel-indicators">
-		       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		       <li data-target="#myCarousel" data-slide-to="1"></li>
-		       <li data-target="#myCarousel" data-slide-to="2"></li>
-		       <li data-target="#myCarousel" data-slide-to="3"></li>
-		       <li data-target="#myCarousel" data-slide-to="4"></li>
-		    </ol>
+    <header class="header">
+            <nav class="nav">
+                    <div class="nav-container">
+                        <div class="logo">
+                            <a href="#" class="logo_link">
+                                <img src="./assets/Waxom.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="nav__taggle">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="#">Home</a></li>
+                            <li class="nav__list-item"><a href="#">About Us</a></li>
+                            <li class="nav__list-item"><a href="#">Portfolio</a></li>
+                            <li class="nav__list-item"><a href="#">Features</a></li>
+                            <li class="nav__list-item"><a href="#">Blog</a></li>
+                            <li class="nav__list-item"><a href="#">Pricing</a></li>
+                            <li class="nav__list-item"><a href="#">Shortcodes</a></li>
+                            <li class="nav__list-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        <div class="slider-container">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <input type="radio" name="point" id="slide4">
+            <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                <div class="slides slide1">
+                    <div class="slide-content">
+                        <div class="slide__title-up">Unique and Modern Design</div>
+                        <div class="slide__title">Portfolio PSD Template</div>
+                        <div class="slide__text">Nam liber tempor cum soluta nobis 
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <a class="default-btn" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="slides slide2">
+                    <div class="slide-content">
+                        <div class="slide__title-up">Unique and Modern Design</div>
+                        <div class="slide__title">Portfolio PSD Template</div>
+                        <div class="slide__text">Nam liber tempor cum soluta nobis 
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <a class="default-btn" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="slides slide3">
+                    <div class="slide-content">
+                        <div class="slide__title-up">Unique and Modern Design</div>
+                        <div class="slide__title">Portfolio PSD Template</div>
+                        <div class="slide__text">Nam liber tempor cum soluta nobis 
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <a class="default-btn" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="slides slide4">
+                    <div class="slide-content">
+                        <div class="slide__title-up">Unique and Modern Design</div>
+                        <div class="slide__title">Portfolio PSD Template</div>
+                        <div class="slide__text">Nam liber tempor cum soluta nobis 
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <a class="default-btn" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="slides slide5">
+                    <div class="slide-content">
+                        <div class="slide__title-up">Unique and Modern Design</div>
+                        <div class="slide__title">Portfolio PSD Template</div>
+                        <div class="slide__text">Nam liber tempor cum soluta nobis 
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <a class="default-btn" href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
+    </header>
 
-		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner">
-			    <div class="item active">
-			        <img src="img/slide1.jpg" alt="Los Angeles" class="img-responsive">
-			        <div class="carousel-caption">
-			          	<h1 class="text-medium">Unique and Modern Design</h1>
-			          	<p class="text-big">Portfolio PSD Template</p>
-			          	<p class="text-small">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-			          	<button type="button" class="btn btn-slider">Get Started</button>
-			        </div>
-			    </div>
+    <section class="service">
+        <div class="container">
+            <div class="service__list">
+                <div class="service__list-item">
+                    <svg class="service__icon" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><use xlink:href="./assets/sprite.svg#web"></use></svg>                    
+                    <div class="service__item-title">Web & App Design</div> 
+                    <div class="service__item-text">Nam liber tempor cum soluta nobis eleifend 
+                    option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+                <div class="service__list-item">
+                    <svg class="service__icon" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><use xlink:href="./assets/sprite.svg#dev"></use></svg>
+                    <div class="service__item-title">Development</div> 
+                    <div class="service__item-text">Lorem ipsum dolor sit amet, adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet.</div>
+                </div>
+                <div class="service__list-item">
+                    <svg class="service__icon" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><use xlink:href="./assets/sprite.svg#custom"></use></svg>
+                    <div class="service__item-title">Customization</div> 
+                    <div class="service__item-text">Nam liber tempor cum soluta nobis eleifend 
+                    option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+                <div class="service__list-item">
+                    <svg class="service__icon" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><use xlink:href="./assets/sprite.svg#market"></use></svg>
+                    <div class="service__item-title">Marketing</div> 
+                    <div class="service__item-text">Nam liber tempor cum soluta nobis eleifend 
+                    option congue nihil imperdiet doming id quod mazim.</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			    <div class="item">
-			        <img src="img/slide1.jpg" alt="Chicago" class="img-responsive">
-			        <div class="carousel-caption">
-			          	<h1 class="text-medium">Unique and Modern Design</h1>
-			          	<p class="text-big">Portfolio PSD Template</p>
-			          	<p class="text-small">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
+    <section class="realization">
+        <div class="container">
+            <div class="realization__head">
+                <h3 class="realization__title">Waxom is Realization of your Ideas.</h3>
+                <div class="realization__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam <br> processus dynamicus, qui sequitur mutationem consuetudium.</div>
+            </div>
+            <div class="realization__bg">
+                <img src="./assets/realization_bg.png" alt="realization" class="realization__bg-image">
+            </div>
+        </div>
+    </section>
+    <section class="textbox">
+        <div class="container">
+            <div class="textbox__row">
+                <div class="textbox__row-left">
+                    <h3 class="textbox__title"><span>Waxom </span> Multipurpose WordPress Theme</h3>
+                    <div class="textbox__text">Don't Forget to Rate the Template. Thanks so much!</div>
+                </div>
+                <div class="textbox__row-right">
+                    <a href="#" alt="button" class="default-btn">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <div class="project__top">
+                <h3 class="project__title">
+                    Our Latest Projects.
+                </h3>
+                <div class="project__text">
+                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br> processus dynamicus, qui sequitur mutationem consuetudium.
+                </div>
+            </div>
+            <div class="project__menu">
+                <div class="menu__item active">
+                    <a href="#" class="menu__item-filter" data-filter="all">All</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#" class="menu__item-filter" data-filter="web">Web Design</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#" class="menu__item-filter" data-filter="mobile">Mobile App</a>
+                </div>     
+                <div class="menu__item">
+                    <a href="#" class="menu__item-filter" data-filter="illustation">Illustration</a>
+                </div>   
+                <div class="menu__item">
+                    <a href="#" class="menu__item-filter" data-filter="photography">Photography</a>
+                </div>
+            </div>
 
-			          	<button type="button" class="btn btn-slider">Get Started</button>
-			        </div>
-			    </div>
-			    
-			    <div class="item">
-			        <img src="img/slide1.jpg" alt="New York" class="img-responsive">
-			        <div class="carousel-caption">
-			          	<h1 class="text-medium">Unique and Modern Design</h1>
-			          	<p class="text-big">Portfolio PSD Template</p>
-			          	<p class="text-small">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-			          	<button type="button" class="btn btn-slider">Get Started</button>
-			        </div>
-			    </div>
+            <ul class="project__list">
+                <li class="project__item filter web">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_1.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Claritas Etiam Processus
+                            </div>
+                            <div class="project__description-text">
+                                Photography, Nature
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-			    <div class="item">
-			        <img src="img/slide1.jpg" alt="New York" class="img-responsive">
-			        <div class="carousel-caption">
-			          	<h1 class="text-medium">Unique and Modern Design</h1>
-			          	<p class="text-big">Portfolio PSD Template</p>
-			          	<p class="text-small">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-			          	<button type="button" class="btn btn-slider">Get Started</button>
-			        </div>
-			    </div>
+                <li class="project__item filter mobile">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_2.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Quam Nutamus Farum
+                            </div>
+                            <div class="project__description-text">
+                                Graphic Design, Mock-Up
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-			    <div class="item">
-			        <img src="img/slide1.jpg" alt="New York"class="img-responsive">
-			        <div class="carousel-caption">
-			          	<h1 class="text-medium">Unique and Modern Design</h1>
-			          	<p class="text-big">Portfolio PSD Template</p>
-			          	<p class="text-small">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-			          	<button type="button" class="btn btn-slider">Get Started</button>
-			        </div>
-			    </div>
-		    </div>
+                <li class="project__item filter illustration">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_3.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Usus Legentis Videntur
+                            </div>
+                            <div class="project__description-text">
+                                Photography, Holiday
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-		    
-		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		      	<span class="glyphicon glyphicon-chevron-left"></span>
-		      	<span class="sr-only">Previous</span>
-		    </a>
-		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-		      	<span class="glyphicon glyphicon-chevron-right"></span>
-		     	<span class="sr-only">Next</span>
-		    </a>
-		</div>
-	</div>
+                <li class="project__item filter photography">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_4.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Claritas Etiam Processus
+                            </div>
+                            <div class="project__description-text">
+                                Photography, Nature
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-	<section class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 text-center">
-					<div class="service-icon">
-						<div class="img-responsive">
-							<img src="img/icons/pencil.png" alt="">
-						</div>
-					</div>
-					<p class="service-title">
-						Web & App Design
-					</p>
-					<p class="service-text">
-						Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					</p>
-					<div class="separator">
-						<hr>
-					</div>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="service-icon">
-						<div class="img-responsive">
-							<img src="img/icons/dev.png" alt="">
-						</div>
-					</div>
-					<p class="service-title">
-						Development
-					</p>
-					<p class="service-text">
-						Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-					</p>
-					<div class="separator">
-						<hr>
-					</div>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="service-icon">
-						<div class="img-responsive">
-							<img src="img/icons/conf.png" alt="">
-						</div>
-					</div>
-					<p class="service-title">
-						Customization
-					</p>
-					<p class="service-text">
-						Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					</p>
-					<div class="separator">
-						<hr>
-					</div>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="service-icon">
-						<div class="img-responsive">
-							<img src="img/icons/market.png" alt="">
-						</div>
-					</div>
-					<p class="service-title">
-						Marketing
-					</p>
-					<p class="service-text">
-						Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					</p>
-					<div class="separator">
-						<hr>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <li class="project__item filter web">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_5.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Quam Nutamus Farum
+                            </div>
+                            <div class="project__description-text">
+                                Graphic Design, Mock-Up
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-	<section class="realization">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="realization-title text-center">Waxom is Realization of your Ideas.</h1>
-					<p class="realization-text text-center">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam <br> processus dynamicus, qui sequitur mutationem consuetudium.</p>
-				</div>
-			</div>
-			<!-- <div class="row"> -->
-				<div class="carousel-2"> 
-					<ul class="carousel">
-					    <li class="items main-pos" id="1">
-					    	<img src="img/slider2-2.PNG" alt="">
-					    </li>
-					    <li class="items right-pos" id="2">
-					      <img src="img/slider2-1.PNG" />
-					    </li>
-					    <li class="items back-pos" id="3">
-					      <img src="img/slider2-3.png"/>
-					    </li>
-					    <li class="items back-pos" id="4">
-					    	<img src="img/slider2-2.PNG" alt="">
-					    </li>
-					    <li class="items back-pos" id="5">
-					     	<img src="img/slider2-1.PNG" alt="">
-					    </li>
-					    <li class="items back-pos" id="6">
-					      <img src="img/slider2-3.png" />
-					    </li>
-					    <li class="items left-pos" id="7"><img src="img/slider2-2.PNG"/>
-					    </li>
-				    </ul>
-					<!-- <span>
-					  <input type="button" value="Prev" id="prev">
-					  <input type="button" value="Next" id="next">
-					</span> -->
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+                <li class="project__item filter web">
+                    <div class="project__img-wrapper">
+                        <div class="project__img-icon">
+                            <img class="project__img" src="./assets/project_6.jpg" alt="">
+                        </div>
+                        <div class="project__description">
+                            <div class="project__description-title">
+                                Usus Legentis Videntur
+                            </div>
+                            <div class="project__description-text">
+                                Photography, Holiday
+                            </div>
+                        </div>
+                    </div>
+                </li> 
+            </ul>
+            <a href="#" alt="button" class="default-btn">Load More</a>
+        </div>
+    </section>
+    <section class="video">
+        <div class="video__wrapper">
+            <a href="#" class="video__icon-wrap"><div class="video__icon"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                <path class="01" d="M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0z"></path>
+                <path class="03" fill="#fff" d="M44.93 66.82a2.07 2.07 0 0 1-2.06-2.06V35.24a2.07 2.07 0 0 1 3.38-1.59l17.72 14.77a2.05 2.05 0 0 1 0 3.16L46.25 66.34c-.37.32-.84.48-1.32.48zM47 39.63v20.73L59.43 50zM49.94 85a34.8 34.8 0 0 1-17.1-4.47 2.06 2.06 0 1 1 2.02-3.59 31 31 0 0 0 36.99-5.09 30.94 30.94 0 0 0 0-43.7 30.93 30.93 0 0 0-43.7 0 30.94 30.94 0 0 0 0 43.7 2.06 2.06 0 1 1-2.91 2.91 35.06 35.06 0 0 1 0-49.52 35.04 35.04 0 0 1 49.52 0 35.06 35.06 0 0 1 0 49.52A35.12 35.12 0 0 1 49.94 85z"></path>
+              </svg></div> </a>
+            <div class="video__description">
+                <h3 class="video__description-title">Waxom Video Presentation</h3>
+                <div class="video__description-text">Investigationes demonstraverunt lectores legere me 
+                    lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</div>
+                <div class="video__description-timer">
+                    03:26
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="thanks">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<h1 class="thanks-title">
-						<span class="color">Waxom</span>
-						Multipurpose WordPress Theme
-					</h1>
-					<div class="thanks-text">
-						Don't Forget to Rate the Template. Thanks so much!
-					</div>
-				</div>
-				<div class="col-md-3">
-					<button type="button" class="btn btn-thanks">Purchase Now</button>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="exelent">
+        <div class="container exelent-container">
+            <div class="exelent__description">
+                <h3 class="exelent__desctiptio-title">
+                    Excellent for Mobile Devices.
+                </h3>
+                <div class="exelent__description-text">
+                    Qisi enim ad minim veniam, quis nostrud 
+                    exerci tation ullamcorper suscipit lobortis nisl ut 
+                    aliquip ex ea commodo consequat. Investigationes demonstraverunt 
+                    lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, 
+                    qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                </div>
+                <ul class="exelent__list">
+                    <li class="exelent__item">
+                        Nam liber tempor cum soluta nobis eleifend option;
+                    </li>
+                    <li class="exelent__item">
+                        Nam liber tempor cum soluta nobis eleifend option;
+                    </li>
+                    <li class="exelent__item">
+                        Nam liber tempor cum soluta nobis eleifend option;
+                    </li>
+                    <li class="exelent__item">
+                        Nam liber tempor cum soluta nobis eleifend option;
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-	<section class="project">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="proj-title text-center">
-						Our Latest Projects.
-					</h1>
-					<p class="proj-text text-center">
-						Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam<br> processus dynamicus, qui sequitur mutationem consuetudium.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-7 col-md-offset-3">
-					<div class="sort">
-						<button type="button" class="btn btn-default lg act">All</button>
-						<button type="button" class="btn btn-default lg">Web Design</button>
-						<button type="button" class="btn btn-default lg">Mobile App</button>
-						<button type="button" class="btn btn-default lg">Illustration</button>
-						<button type="button" class="btn btn-default lg">Photography</button>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">			
-							<img src="img/proj1.jpg" alt="">  
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Claritas Etiam Processus
-							</h2>
-							<p class="projects-text">
-								Photography, Nature
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">
-							<img src="img/proj2.jpg" alt="">
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Quam Nutamus Farum
-							</h2>
-							<p class="projects-text">
-								Graphic Design, Mock-Up
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">
-							<img src="img/proj3.jpg" alt="">
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Usus Legentis Videntur
-							</h2>
-							<p class="projects-text">
-								Photography, Holiday
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">
-							<img src="img/proj4.jpg" alt="">
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Claritas Etiam Processus
-							</h2>
-							<p class="projects-text">
-								Photography, Nature
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">
-							<img src="img/proj5.jpg" alt="">
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Quam Nutamus Farum
-							</h2>
-							<p class="projects-text">
-								Graphic Design, Mock-Up
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="proj">
-						<div class="img-responsive proj-img">
-							<img src="img/proj6.jpg" alt="">
-						</div>
-						<div class="proj-content">
-							<h2 class="projects-title">
-								Usus Legentis Videntur
-							</h2>
-							<p class="projects-text">
-								Photography, Holiday
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2 col-md-offset-5">
-					<button type="button" class="btn btn-slider proj-btn">Load More</button>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="presentation">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<a href="#" class="play"><img src="img/icons/play.png" alt=""></a>
-					<h2 class="pres-title text-center">Waxom Video Presentation</h2>
-					<p class="pres-text text-center">Investigationes demonstraverunt lectores legere me lius quod ii<br> legunt saepius, qui sequitur mutationem consuetudium.</p>
-					<p class="pres-time text-center">03:26</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="mobile">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-md-offset-1">
-				<img class="mob" src="img/phone.jpg" alt="">
-				</div>
-				<div class="col-md-7">
-					<h2 class="mob-title">Excellent for Mobile Devices.</h2>
-					<p class="mob-text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis <br> nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores<br> legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis<br> videntur parum clari, fiant sollemnes in futurum.</p>
+    <section class="textbox-counters">
+        <div class="container">
+            <ul class="textbox__list">
+                <li class="textbox__item">
+                    <svg class="textbox__icon">
+                        <use xlink:href="./assets/sprite.svg#client"></use>
+                    </svg>
+                    <div class="textbox__count">
+                        3587
+                    </div>
+                    <div class="textbox__desk">
+                        Satisfied clients
+                    </div>
+                </li>
+                <li class="textbox__item">
+                    <svg class="textbox__icon">
+                        <use xlink:href="./assets/sprite.svg#coffee"></use>
+                    </svg>
+                    <div class="textbox__count">
+                        207
+                    </div>
+                    <div class="textbox__desk">
+                        Cups of coffee
+                    </div>
+                </li>
+                <li class="textbox__item">
+                    <svg class="textbox__icon">
+                        <use xlink:href="./assets/sprite.svg#blog"></use>
+                    </svg>
+                    <div class="textbox__count">
+                        2500
+                    </div>
+                    <div class="textbox__desk">
+                        Blog posts
+                    </div>
+                </li>
+                <li class="textbox__item">
+                    <svg class="textbox__icon">
+                        <use xlink:href="./assets/sprite.svg#like"></use>
+                    </svg>
+                    <div class="textbox__count">
+                        873
+                    </div>
+                    <div class="textbox__desk">
+                        Likes
+                    </div>
+                </li>
+                <li class="textbox__item">
+                    <svg class="textbox__icon">
+                        <use xlink:href="./assets/sprite.svg#launch"></use>
+                    </svg>
+                    <div class="textbox__count">
+                        900
+                    </div>
+                    <div class="textbox__desk">
+                        We launched
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-					<div class="feat">
-						<i class="fa fa-chevron-circle-right" aria-hidden="true"><span class="pl30">Nam liber tempor cum soluta nobis eleifend option;</span></i>
-						<i class="fa fa-chevron-circle-right" aria-hidden="true"><span class="pl30">Option congue nihil imperdiet doming id quod mazim placerat facer;</span></i>
-						<i class="fa fa-chevron-circle-right" aria-hidden="true"><span class="pl30">Eodem modo typi, qui nunc nobis videntur parum futurum;</span></i>
-						<i class="fa fa-chevron-circle-right" aria-hidden="true"><span class="pl30">Investigationes demonstraverunt lectores;</span></i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="brand">
+        <div class="container">
+            <ul class="brand__list">
+                <li class="brand__item">
+                    <img class="brand__img" src="./assets/brand_1.png" alt="">
+                </li>
+                <li class="brand__item">
+                    <img class="brand__img" src="./assets/brand_2.png" alt="">
+                </li>
+                <li class="brand__item">
+                    <img class="brand__img" src="./assets/brand_3.png" alt="">
+                </li>    
+                <li class="brand__item">
+                    <img class="brand__img" src="./assets/brand_4.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
 
-	<section class="counter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-md-offset-1">
-					<div class="counter-content text-center">
-						<i class="fa fa-user-o fa-3x color" aria-hidden="true"></i>
-						<p class="numb">3587</p>
-						<p class="content-text color">Satisfied Clients</p>
-						<hr class="line">
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="counter-content text-center">
-						<i class="fa fa-coffee fa-3x color" aria-hidden="true"></i>
-						<p class="numb">207</p>
-						<p class="content-text color">Cups of coffee</p>
-						<hr class="line">
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="counter-content text-center">
-						<i class="fa fa-commenting-o fa-3x color" aria-hidden="true"></i>
-						<p class="numb">2500</p>
-						<p class="content-text color">Blog posts</p>
-						<hr class="line">
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="counter-content text-center">
-						<i class="fa fa-heart-o fa-3x color" aria-hidden="true"></i>
-						<p class="numb">837</p>
-						<p class="content-text color">Likes</p>
-						<hr class="line">
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="counter-content text-center">
-						<i class="fa fa-archive fa-3x color" aria-hidden="true"></i>
-						<p class="numb">900</p>
-						<p class="content-text color">We launched</p>
-						<hr class="line">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="partner">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="partner-img1">
-						<img src="img/part1.png" alt="">
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="partner-img">
-						<img src="img/part2.png" alt="">
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="partner-img3">
-						<img src="img/part3.png" alt="">
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="partner-img4">
-						<img src="img/part4.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="widget">
+        <div class="container">
+            <ul class="widget__list">
+                <li class="widget__item">
+                    <div class="widget__logo-wrap">
+                        <img class="widget__logo" src="./assets/widget-logo.png" alt="">
+                    </div>
+                    <div class="widget__text">
+                        Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit, 
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
+                        exerci suscipit lobortis claritatem.
+                    </div>
+                    <a href="#" class="widget__button">Read More</a>
+                </li>
+                <li class="widget__item">
+                    <div class="widget__title">Recent Posts</div>
+                    <a href="#" class="widget__item-link">
+                        <div class="widget__item-date">
+                            September 08, 2015
+                        </div>
+                        <div class="widget__text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                        </div>
+                    </a>
+                    <a href="#" class="widget__item-link">
+                        <div class="widget__item-date">
+                            September 08, 2015
+                        </div>
+                        <div class="widget__text">
+                            Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        </div>
+                    </a>
+                    <a href="#" class="widget__item-link">
+                        <div class="widget__item-date">
+                            September 08, 2015
+                        </div>
+                        <div class="widget__text">
+                            Claritas est etiam processus dynamicus,
+                            qui sequitur mutationem per seacula quarta decima
+                        </div>
+                    </a>
+                </li>
+                <li class="widget__item">
+                    <div class="widget__title">Our Twitter</div>
+                    <div class="widget__tweet">
+                        <div class="widget__text">
+                            <a class="widget__link" href="#">@waxom</a>
+                            Cum soluta nobis eleifend option 
+                            congue nihil imperdiet domingt
+                        </div>
+                        <div class="widget__item-date">
+                            3 mins ago
+                        </div>
+                    </div>
+                    <div class="widget__tweet">
+                        <div class="widget__text">
+                            Mirum est  <a href="@" class="widget__link">#envato</a> notare quam littera gothica, 
+                            quam nunc putamus parum anteposuerit litterarum
+                        </div>
+                        <div class="widget__item-date">
+                            5 hours ago
+                        </div>
+                    </div>
+                    <div class="widget__tweet">
+                        <div class="widget__text">
+                            Soluta nobis option <a href="#" class="widget__link-color">bit.ly/1Hniso7</a>
+                        </div>
+                        <div class="widget__item-date">
+                            20 days ago
+                        </div>
+                    </div>
+                </li>
+                <li class="widget__item">
+                    <div class="widget__title">
+                        Dribbble Widget
+                    </div>
+                    <a href="#" class="widget__img-wrap">
+                        <img class="widget__img" src="./assets/widget_1.png" alt="">
+                    </a>
+                    <a href="#" class="widget__img-wrap">
+                        <img class="widget__img" src="./assets/widget_2.png" alt="">
+                    </a>
+                    <a href="#" class="widget__img-wrap">
+                        <img class="widget__img" src="./assets/widget_3.png" alt="">
+                    </a>
+                    <a href="#" class="widget__img-wrap">
+                        <img class="widget__img" src="./assets/widget_4.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-	<section class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="about">
-						<a href="#"><img class="about-logo" src="img/Waxom.png" alt=""></a>
-						<p class="about-text">Lorem ipsum dolor sit amet, consec-<br>tetuer adipiscing elit, sed diam<br> nonummy nibh euismod tincidunt ut<br> laoreet dolore magna aliquam erat<br> volutpat. Ut wisi enim ad minim<br> veniam, quis nostrud exerci suscipit<br> lobortis claritatem.	
-						</p>
-						<button class="about-btn">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></button>	
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="resent-posts">
-						<h2 class="posts-title">Recent Posts</h2>
-						<p class="posts-calendar">September 08, 2015</p>
-						<p class="posts-text">Lorem ipsum dolor sit amet, consec-<br>tetuer adipiscing elit</p>
-						<hr class="posts-line">
-
-						<p class="posts-calendar_color">September 08, 2015</p>
-						<p class="posts-text_color">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-						<hr class="posts-line">
-
-						<p class="posts-calendar">September 08, 2015</p>
-						<p class="posts-text">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
-
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="twitter">
-						<h2 class="twitter-title">Our Twitter</h2>
-						<p class="twit-text"><a href="#" class="twit-color">@waxom </a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
-						<div class="twit-time">3 mins ago</div>
-						<hr class="posts-line">
-
-						<p class="twit-text">Mirum est <a href="#" class="twit-color">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
-						<div class="twit-time">5 hours ago</div>
-						<hr class="posts-line">
-
-						<p class="twit-text">Soluta nobis option <a class="twit-link" href="#">bit.ly/1Hniso7</a></p>
-						<div class="twit-time">20 days ago</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="widget">
-						<h2 class="widget-title">Dribbble Widget</h2>
-						<div class="wid-images">
-							<table>
-								<tr>
-									<td><img src="img/wid1.jpg" alt=""></td>
-									<td><img src="img/wid2.jpg" alt=""></td>
-								</tr>
-								<tr>
-									<td><img src="img/wid3.jpg" alt=""></td>
-									<td><img src="img/wid4.jpg" alt=""></td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="copy">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="footer-nav">
-						<ul class="text-left">
-							<li><a href="#">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
-							 2015 <span class="white">Waxom</span> |</a></li>
-							<li><a href="#">Privacy Policy |</a></li>
-							<li><a href="#"><span class="orange">FAQ</span> |</a></li>
-							<li><a href="#">Support</a></li>
-						</ul>
-						<ul class="text-right">
-							<li><a href="#">Designed by <span class="white">ThemeFire </span> |</a></li>
-							
-							<li><a href="#">Only on <span class="white">Envato Market</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<script src="js/slider2.js"></script>
+    <script>
+            $(document).ready(function(){
+            $(".menu__item-filter").click(function(){
+            var value = $(this).attr('data-filter');
+            s
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
+        
+                if ($(".menu__item-filter").removeClass("active")) {
+            $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+    
+            });
+        </script>
 </body>
 </html>
-
